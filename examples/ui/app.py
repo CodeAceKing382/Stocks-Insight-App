@@ -9,20 +9,21 @@ api_host = os.environ.get("HOST", "0.0.0.0")
 api_port = int(os.environ.get("PORT", 8080))
 
 # Streamlit UI elements
-st.title("📈 Nifty 50 Stock Insights")
+st.title("📈 Nifty 50 Trade Decision and  Insights")
 st.markdown(
     """
     ## How to use:
     
-    Enter a question about any of the Nifty 50 stocks, and the AI will provide insights based on the latest stock data.
+    Enter a question about price-action decision for any the Nifty 50 stock or as a whole, 
+        and the AI will provide decision along with justification and explanation through financial analysis.
 
     ---
     """
 )
 
 question = st.text_input(
-    "Enter your question here",
-    placeholder="E.g., What is the current trend for Reliance Industries?",
+    "Enter your question here (Please mention the stock by ticker symbol) ",
+    placeholder="E.g., What will be my price-action decision for TCS.NS stock today? , Find best stocks to buy today.",
 )
 
 # Handle the query submission
