@@ -93,7 +93,7 @@ To help the model, we give knowledge of stock data from a reliable data source (
 
 After we give this knowledge to GPT through the jsonl file, look how it replies:
 
-![sample_run](/assets/sample_run.jpg)
+![sample_run](/assets/sample_run.png)
 
  The cool part is, the app is always aware of changes in the daily prices . If you just open the app for the day , the LLM app does magic and automatically updates the AI model's response for the day.
 
