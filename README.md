@@ -84,6 +84,7 @@ The model might not answer such queries properly. Because it is not aware of the
 For example, a typical response you can get from the OpenAI [Chat Completion endpoint](https://platform.openai.com/docs/api-reference/chat) or [ChatGPT UI](https://chat.openai.com/) interface without context is:
 
 ![chatgpt_screenshot1](/assets/chatgpt1.png)
+
 ![chatgpt_screenshot2](/assets/chatgpt2.png)
 
 As you can see, GPT responds only with suggestions on how determine decisions but it is not specific and does not provide exactly where or what decision explicitly and so on.
@@ -191,6 +192,6 @@ When the application runs successfully, you should see output something like thi
 You can run the UI separately by navigating to `cd examples/ui` and running Streamlit app
 `streamlit run app.py` command. It connects to the Discounts backend API automatically and you will see the UI frontend is running http://localhost:8501/ on a browser:
 
-  ![screenshot_ui_streamlit](/assets/streamlit_ui_pathway.png)
+  ![screenshot_ui_streamlit](/assets/streamlit_ui.png)
 
 
