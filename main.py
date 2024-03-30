@@ -6,11 +6,15 @@ import subprocess
 load_dotenv()
 
 if __name__ == "__main__":
-    # Fetch data from Rainforest API
+    # Run stock prediction and generate nifty_50_predictions.jsonl
     try:
-        cmd = ["python3", "examples/rainforest/data_ingestion_cron_job.py"]
+        # Update the command to run stock_decision_prediction.py script
+        cmd = ["python", "examples/prediction model/stock_decision_prediction.py"]
 
+        # Execute the command
         subprocess.run(cmd, check=True)
+
+        print("Successfully generated nifty_50_predictions.jsonl.")
     except subprocess.CalledProcessError:
         print("Script execution failed.")
     except FileNotFoundError:

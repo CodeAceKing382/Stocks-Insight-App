@@ -14,14 +14,14 @@ def run(host, port):
     )
 
     # Real-time data coming from external data sources such as jsonlines file
-    sales_data = pw.io.jsonlines.read(
-        "./examples/data",
+    stock_data = pw.io.jsonlines.read(
+        "./examples/data/stock_predict_total.jsonl",
         schema=DataInputSchema,
         mode="streaming"
     )
 
     # Compute embeddings for each document using the OpenAI Embeddings API
-    embedded_data = embeddings(context=sales_data, data_to_embed=sales_data.doc)
+    embedded_data = embeddings(context=stock_data, data_to_embed=stock_data.doc)
 
     # Construct an index on the generated embeddings in real-time
     index = index_embeddings(embedded_data)
