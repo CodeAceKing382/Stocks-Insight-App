@@ -85,7 +85,7 @@ For example, a typical response you can get from the OpenAI [Chat Completion end
 
 ![chatgpt_screenshot1](/assets/chatgpt1.png)
 
-![chatgpt_screenshot2](/assets/chatgpt2.png)
+![chatgpt_screenshot2](/assets/chatgp2.png)
 
 As you can see, GPT responds only with suggestions on how determine decisions but it is not specific and does not provide exactly where or what decision explicitly and so on.
 
@@ -93,7 +93,7 @@ To help the model, we give knowledge of stock data from a reliable data source (
 
 After we give this knowledge to GPT through the jsonl file, look how it replies:
 
-![chatgpt_screenshot2](/assets/chatgpt2.png)
+![sample_run](/assets/sample_run.jpg)
 
  The cool part is, the app is always aware of changes in the daily prices . If you just open the app for the day , the LLM app does magic and automatically updates the AI model's response for the day.
 
